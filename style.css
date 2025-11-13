@@ -1,0 +1,208 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body + Page Layout */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(180deg, #0f1724, #071024);
+  color: #e6eef8;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  background: #0b1220;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffce47;
+}
+
+nav a {
+  color: #e6eef8;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover, nav a.active {
+  color: #ffce47;
+}
+
+/* Hero Section (Home Page) */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 60px 80px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1;
+  max-width: 480px;
+}
+
+.hero-text h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.hero-text span {
+  color: #ffce47;
+}
+
+.hero-text p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 25px;
+  color: #cdd9e7;
+}
+
+.btn {
+  display: inline-block;
+  background: #ffce47;
+  color: #0b1220;
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #ffd75d;
+}
+
+.hero-img img {
+  width: 350px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+/* Menu Page */
+.menu {
+  padding: 50px 80px;
+  text-align: center;
+}
+
+.menu h2 {
+  color: #ffce47;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.menu h3 {
+  margin: 25px 0 15px;
+  color: #ffce47;
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.card {
+  background: #182236;
+  width: 17cm; /* as you said */
+  height: 7cm; /* as you said */
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+
+.card p {
+  padding: 8px 10px;
+  font-size: 15px;
+  color: #e6eef8;
+}
+
+/* Contact Page */
+.contact {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.contact h2 {
+  color: #ffce47;
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.contact form {
+  max-width: 400px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact input,
+.contact textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.contact button {
+  background: #ffce47;
+  color: #0b1220;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background: #ffd75d;
+}
+
+/* Footer — stays at bottom */
+footer {
+  margin-top: auto;
+  background: #0b1220;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  color: #cdd9e7;
+}
